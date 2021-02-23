@@ -18,7 +18,7 @@ app.get('/home', (request, response, next) => {
   });
 
 //   const PORT = process.env.PORT || 3000
-  app.listen(3000, () => {
+  app.listen(process.env.PORT || 3000, () => {
     console.log(`Here we are listening on PORT 3000`)
   } )
   
